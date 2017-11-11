@@ -1,12 +1,14 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-require_once 'helpers/Base.php';
+namespace Ekkomoon\Smn;
+
+use Ekkomoon\Smn\Libraries\Base;
 
 /**
  * Social Media Updater fieldtype class
  * @author glen
  */
-class Smu_ft extends EE_Fieldtype
+class Smn_ft extends EE_Fieldtype
 {
 
     /**
@@ -15,7 +17,7 @@ class Smu_ft extends EE_Fieldtype
      * @var array
      */
     protected $info = [
-        'name' => 'Social Media Updater',
+        'name' => 'Social Media Notifier',
         'version' => '1.0',
         'settings_exist' => 'n'
     ];
@@ -111,7 +113,7 @@ class Smu_ft extends EE_Fieldtype
                     ]
                 ]
             ]
-        ]
+        ];
 
         return [
             'field_options_smn' => [

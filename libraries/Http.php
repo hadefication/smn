@@ -1,11 +1,13 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
+namespace Ekkomoon\Smn\Libraries;
+
 /**
  * Simple curl wrapper
  *
  * @author Warda Bangkila
  */
-class Cttp
+class Http
 {
 
     /**

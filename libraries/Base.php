@@ -1,6 +1,6 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-require_once 'Cttp.php';
+namespace Ekkomoon\Smn\Libraries;
 
 /**
  * Social Media Updater base class

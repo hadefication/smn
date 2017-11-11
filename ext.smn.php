@@ -1,6 +1,8 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-require_once 'helpers/Base.php';
+namespace Ekkomoon\Smn;
+
+use Ekkomoon\Smn\Libraries\Base;
 
 /**
  * Social media notifier extention class

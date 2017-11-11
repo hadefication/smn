@@ -1,12 +1,15 @@
 <?php  if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-require_once 'helpers/Base.php';
+namespace Ekkomoon\Smn;
+
+use Ekkomoon\Smn\Libraries\Base;
 
 /**
  * Social media notifier module control panel class
  * @author glen
  */
-class Smn_mcp extends Base {
+class Smn_mcp extends Base
+{
 
     /**
      * Consttructor
@@ -15,7 +18,7 @@ class Smn_mcp extends Base {
      */
     public function __construct()
     {
-        parent::saveModUrls(array(
+        $this->saveModUrls(array(
             'redirect_url' => ee()->config->item('site_url').'index.php?ACT='.ee()->cp->fetch_action_id('Smn', 'auth'),
             'module_cp_url' => ee()->config->item('site_url').$this->getSettingsPageURL()
         ));
